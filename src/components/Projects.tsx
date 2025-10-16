@@ -1,10 +1,23 @@
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { useState} from "react";
-import * as XLSX from 'xlsx';
 import 'react-multi-carousel/lib/styles.css';
+
 import comp1 from "../assets/img/JeuDuPendu.png";
-import comp2 from "../assets/img/FormulaireHTMLCSSJS2.png";
+import comp11 from "../assets/img/pageConnexionJeuPendu.png";
+
+import comp2 from "../assets/img/FormulaireHTMLCSSJS.png";
+import comp21 from "../assets/img/FormulaireHTMLCSSJS2.png";
+import comp22 from "../assets/img/firstFormFilledPART1.png";
+import comp23 from "../assets/img/firstFormFilledPART2.png";
+import comp24 from "../assets/img/resultFirstForm.png";
+
+
 import comp3 from "../assets/img/FormulaireHTMLCSSJQUERY1.png";
+import comp31 from "../assets/img/secondFormFilled.png";
+import comp32 from "../assets/img/FactorielleInputPART2.png";
+import comp33 from "../assets/img/FactorielleOutPutPART2.png";
+import comp34 from "../assets/img/resultSecondForm.png";
+
 import comp4 from "../assets/img/appLog.png";
 import comp5 from "../assets/img/formPizza.png";
 import comp6 from "../assets/img/jeuRoulette.png";
@@ -230,13 +243,12 @@ export const Projects = () => {
                             </tr><tr>
                                 <th scope="row">Conception et développement d'un jeu du pendu avec HTML/CSS, javascript, xpx et bootstrap</th>
                                 <td className="w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp1} data-lightbox="jeuPendu" target="_blank">
+                                    <a href={comp11} data-lightbox="jeuPendu" target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className="w-25 btn_tab_synthese text-center align-middle">
                                     <a href={comp1} data-lightbox="jeuPendu" target="_blank">
-                                        <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className="w-25"></td>
@@ -259,30 +271,27 @@ export const Projects = () => {
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp2} target="_blank">
+                                    <a href={comp21} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp2} target="_blank">
+                                    <a href={comp22} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp2} target="_blank">
+                                    <a href={comp23} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp2} target="_blank">
+                                    <a href={comp24} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
 
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp2} target="_blank">
-                                        <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
-                                    </a>
                                 </td>
 
                             </tr>
@@ -298,29 +307,26 @@ export const Projects = () => {
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp3} target="_blank">
+                                    <a href={comp31} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp3} target="_blank">
+                                    <a href={comp32} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp3} target="_blank">
+                                    <a href={comp33} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp3} target="_blank">
+                                    <a href={comp34} target="_blank">
                                         <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
                                     </a>
                                 </td>
                                 <td className=" w-25 btn_tab_synthese text-center align-middle">
-                                    <a href={comp3} target="_blank">
-                                        <i className="fa-solid fa-image fa-2xl" aria-hidden="true"></i>
-                                    </a>
                                 </td>
                             </tr>
                             
@@ -365,4 +371,4 @@ export const Projects = () => {
             {/* <img className='background-image-left' src={colorSharp} /> */}
         </section>
     )
-}                   
+} 
