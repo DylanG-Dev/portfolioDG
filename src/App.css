@@ -2,19 +2,19 @@
 
 @font-face {
     font-family: Centra;
-    src: url('./assets/font/CentralNo2-Bold.ttf');
+    src: url('./assets/font/CentraNo2-Bold.ttf');
     font-weight: 700;
 }
 
 @font-face {
     font-family: Centra;
-    src: url('./assets/font/CentralNo2-Medium.ttf');
+    src: url('./assets/font/CentraNo2-Medium.ttf');
     font-weight: 500;
 }
 
 @font-face {
     font-family: Centra;
-    src: url('./assets/font/CentralNo2-Book.ttf');
+    src: url('./assets/font/CentraNo2-Book.ttf');
     font-weight: 400;
 }
 
@@ -541,8 +541,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .padding {
     padding-top: 30px;
 }
-
-.new
 
 .App {
     text-align: center;

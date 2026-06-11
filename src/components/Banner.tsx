@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import { Container, Row, Col, Nav } from "react-bootstrap";
-import headerImg from "../assets/img/picturecv.png";
+import { Container, Row, Col } from "react-bootstrap";
+import headerImg from "../assets/img/picturecv2.png";
 import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
@@ -53,7 +53,7 @@ export const Banner = () => {
                         <TrackVisibility>
                         {({ isVisible }) =>
                             <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                            <img src={headerImg} alt="Header Img"/>
+                                <img src={headerImg} alt="Header Img"/>
                             </div>}
                         </TrackVisibility>
                     </Col>

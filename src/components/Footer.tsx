@@ -3,7 +3,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 
 export const Footer = () => {
     return (
-        <footer className="footer" id="contacts">
+        <footer className="footer pt-4 mt-5" id="contacts">
             <Container>
                 <Row className="d-flex justify-content-center align-items-center">
                     <Col xs={12} sm={6} className="text-center"> {/* Ensure full width on mobile and centered on larger screens */}

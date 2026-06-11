@@ -1,13 +1,12 @@
 import './App.css';
-import { NavBar } from "./components/NavBar";
-import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
-import { Projects } from "./components/Projects";
-import { VeilleTechno } from "./components/VeilleTechno";
+import 'react-multi-carousel/lib/styles.css';
 import { About } from "./components/About";
-// import { Contact } from "./components/Contact";
+import { Banner } from "./components/Banner";
 import { Footer } from "./components/Footer";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from "./components/NavBar";
+import { Projects } from './components/Projects';
+import { Skills } from "./components/Skills";
+import { VeilleTechno } from "./components/VeilleTechno";
 
 function App() {
   return (
@@ -15,19 +14,9 @@ function App() {
       <NavBar />
       <Banner />
       <About />
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <Skills />
-      <br></br>
-      <br></br>
       <Projects />
-      <br></br>
-      <br></br>
       <VeilleTechno />
-      <br></br>
-      {/* <Contact /> */}
       <Footer />
     </div>
   );

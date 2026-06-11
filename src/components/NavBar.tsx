@@ -4,20 +4,20 @@ import navIcon1 from '../assets/img/logoGitHub.png';
 import navIcon2 from '../assets/img/logoLinkedin.png';
 import navIcon3 from '../assets/img/logoGmail.png';
 import { Modal, Button } from 'react-bootstrap';
-import previewImage from "../assets/img/resume-img.svg";
+import previewImage from "../assets/img/resume.png";
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
-    const [scrolled, seScrolled] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
     const [showModal, setShowModal] = useState(false);
     const [modalContent, setModalContent] = useState<'image' | 'pdf' | null>(null);
 
     useEffect(() => {
         const onScroll = () => {
             if (window.scrollY > 50) {
-                seScrolled(true);
+                setScrolled(true);
             } else {
-                seScrolled(false);
+                setScrolled(false);
             }
         }
 
@@ -41,7 +41,6 @@ export const NavBar = () => {
         <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
             <Container>
                 <Navbar.Brand href="#home">
-                    {/* <img src={logo} alt="logo" /> */}
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav">
                     <span className="navbar-toggler-icon"></span>
@@ -57,14 +56,11 @@ export const NavBar = () => {
                     <span className="navbar-text">
                         <div className="social-icon">
                             <a target="_blank" href="https://github.com/DylanG-Dev/"><img src={navIcon1} alt="" /></a>
-                            <a target="_blank" href="https://www.linkedin.com/"><img src={navIcon2} alt="" /></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/dylan-gamet-70678a309/"><img src={navIcon2} alt="" /></a>
                             <a target="_blank" href="mailto:gametdylan@gmail.com"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <Nav.Link href="#contacts" className={activeLink === 'contacts' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('contact')}><button className="vvd" onClick={() => console.log('connect')}><span>Contact</span></button></Nav.Link>
+                        <Nav.Link href="#contacts" className={activeLink === 'contacts' ? 'active navbar-link' : 'navbar-link'}><button className="vvd"><span>Contact</span></button></Nav.Link>
                         <div>
-                            {/* Links to open modal */}
-                            
-                            {/* Modal */}
                             <Modal show={showModal} onHide={handleClose} size="lg" centered>
                                 <Modal.Header closeButton>
                                 <Modal.Title>

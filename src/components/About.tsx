@@ -1,47 +1,8 @@
-import { useState, useEffect } from "react";
 import { Container, Row, Col, Nav } from "react-bootstrap";
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export const About = () => {
-    const [loopNum, setLoopNum] = useState(0);
-    const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate =  ["étudiant en BTS SIO option SLAM"];
-    const [text, setText] = useState('');
-    const [delta, setDelta] = useState(300 - Math.random() * 100);
-    const period = 2000;
-
-    useEffect(() => {
-        let ticker = setInterval(() => {
-            tick();
-        },delta)
-
-        return () => { clearInterval(ticker)};
-    }, [text])
-
-    const tick = () => {
-        let i = loopNum % toRotate.length;
-        let fullText = toRotate[i];
-        let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-        setText(updatedText);
-
-        if (isDeleting) {
-            setDelta(prevDelta => prevDelta / 2)
-        }
-
-        if (!isDeleting && updatedText == fullText) {
-            setIsDeleting(true);
-            setDelta(period);
-        } else if(isDeleting && updatedText === '') {
-            setIsDeleting(false);
-            setLoopNum(loopNum + 1);
-            setDelta(500);
-        }
-    }
-
-    
-
     return (
         <section className="about" id="about">
             <Container>
@@ -50,7 +11,7 @@ export const About = () => {
                         <h2 className="tagline justify-content-center">A propos</h2>
                         <br></br>
                         <h3>Présentation</h3>
-                        <p>Actuellement étudiant en BTS SIO option SLAM au lycée ORT, je vous invite à découvrir sur ce portfolio un aperçu de mon parcours académique et professionnel. Vous y trouverez mon CV ainsi qu’une présentation des différents projets que j’ai réalisés au cours de ma formation. </p>
+                        <p>Actuellement étudiant en BTS SIO option SLAM au sein de l'ORT, je vous invite à découvrir sur ce portfolio un aperçu de mon parcours académique et professionnel. Vous y trouverez mon CV ainsi qu’une présentation des différents projets que j’ai réalisés au cours de ma formation. </p>
                         <br></br>
                         <h2>Qu'est-ce que le BTS SIO ?</h2>
                         <p>Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2. Il forme des experts en informatique, compétents aussi bien en développement qu'en administration et maintenance des réseaux informatiques.</p>
@@ -77,17 +38,20 @@ export const About = () => {
                         <br></br>
                         <h2>Mon parcours</h2>
                         <br></br>
-                        <h4>Mes expériences Professionnelles</h4>
+                        <h4>Mes expériences professionnelles</h4>
                         <br></br>
-                        <p>Stage à la piscine au mois de mars 2024</p>
-                        <p>Stage chez infocosme pour ma 1ère année de BTS SIO du 26 mai au 4 juillet 2025 <br></br><a href="/files/RapportStageDylanGamet.pdf" target="_blank" rel="noopener noreferrer">Rapport de stage</a></p>
+                        <p>Stage en tant que développeur web Full-Stack chez Infocosme pour ma 1ère année de BTS SIO option SLAM du 26 mai 2025 au 4 juillet 2025 
+                            <br></br>
+                            </p>
+                        <p>Stage en tant que DevOps chez GTD Sistemas de Informacion pour ma 2ème année de BTS SIO option SLAM du 5 janvier 2026 au 13 février 2026 
+                            <br></br>
+                        </p>
                         <br></br>
-                        <h2>Mon parcours scolaire</h2>
+                        <h2>Mon parcours</h2>
                         <br></br>
                         <h4>2024-2026</h4>
-                        <h4>Lycée ORT, Lyon, France</h4>
+                        <h4>ORT Lyon, Lyon, France</h4>
                         <p>BTS Services informatiques aux organisations Option Solutions Logicielles et Applications Métiers </p>
-                        <a href="https://ort-france.fr/lyon/" target="_blank">Site ORT</a>
                     </Col>
                     
                 </Row>
