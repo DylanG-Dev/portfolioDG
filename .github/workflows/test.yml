@@ -10,8 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: node:24.12.0
-      
+
     steps:
       - uses: actions/checkout@v3
       - run: npm ci
+      - run: npm run test
       - run: npm run build
