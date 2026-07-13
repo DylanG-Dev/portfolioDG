@@ -7,6 +7,6 @@ describe('App', () => {
     it('renders without crashing and shows the nav', () => {
         render(<App />);
 
-        expect(screen.getByText('Johanna')).toBeInTheDocument();
+        expect(screen.getByText('Bienvenue sur mon portfolio')).toBeInTheDocument();
     }); 
 });
